@@ -3,6 +3,8 @@ syntax on
 filetype  plugin on
 let mapleader = " "
 set termguicolors
+set path+=**
+set wildmenu
 set number
 set relativenumber
 set fileformat=unix
@@ -85,3 +87,7 @@ augroup netrw_mapping
   autocmd filetype netrw call NetrwMapping()
 augroup END
 
+
+nnoremap d "_d
+nnoremap x d
+nnoremap xx dd
